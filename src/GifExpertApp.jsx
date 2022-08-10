@@ -1,7 +1,8 @@
 import React,{useState} from 'react';
 import AddCategory from './components/addCategory/AddCategory';
 import GifGrid from './components/gifGrid/GifGrid';
-
+import styles from './GifExpertApp.module.css'
+import './styles.css'
 
 const GifExpertApp = () => {
 
@@ -16,25 +17,20 @@ const GifExpertApp = () => {
 
   return (
 
-    <>
-        {/*Titulo */}
-        <h2>GifExpertApp</h2>
+    <div className={styles.body}>
+        <h1 className={styles._h1}>GifApp!</h1>
 
-        {/*Input */}
         <AddCategory handlerCategory={addOnCategory}/>
 
-
-        {/*Listado de Gif */}
-        <ul>
+        <div className={styles.categoryContainer}>
             {categories.map((category)=>
                             <GifGrid
                             key={category}
                             category={category}
                             />)}
-        </ul>
-            {/*Gif Item */}
+        </div>
 
-    </>
+    </div>
   )
 };
 

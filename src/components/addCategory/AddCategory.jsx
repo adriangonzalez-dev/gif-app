@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
+import styles from './AddCategory.module.css'
 
 const AddCategory = ({handlerCategory}) => {
 
@@ -21,13 +22,18 @@ const AddCategory = ({handlerCategory}) => {
 
 
   return (
-    <form onSubmit={(e)=>handlerSubmit(e)}>
+    <form onSubmit={(e)=>handlerSubmit(e)} className={styles.form}>
         <input 
+            required='required'
             type="text"
-            placeholder='Buscar Gifs'
+            className={styles._input}
             value={inputValue}
             onChange={(e)=>inputValueChange(e)}
         />
+        <span className={styles._span}>
+            Buscar Gif's
+        </span>
+        <i className={styles._i}></i>
     </form>
   )
 }
