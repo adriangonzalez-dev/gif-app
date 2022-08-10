@@ -1,6 +1,7 @@
 import useFetchGif from '../../hooks/useFetchGif';
 import GifItem from '../gifItem/GifItem';
-import styles from './GifGrid.module.css'
+import styles from './GifGrid.module.css';
+import Spinner from '../spinner/Spinner';
 
 
 
@@ -13,7 +14,7 @@ const GifGrid =({category}) => {
       <h3 className={styles._3_category}>{category}</h3> 
       <div className={styles.categoryContainer}>
           
-          { isLoading && <h2>Cargando...</h2> }
+          { isLoading && <Spinner />}
             {images.map(image=>{
               return (
                 <GifItem key={image.id}

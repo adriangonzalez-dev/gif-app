@@ -16,3 +16,28 @@
     justify-content: center;
     gap: 15px;
 }
+
+._h1{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 6ch;
+    font-family: var(--secondaryFont);
+    animation: typing 2s steps(12),
+    blink .5s infinite step-end alternate;
+
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        color: var(--primaryColor);
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

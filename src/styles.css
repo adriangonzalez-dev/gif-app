@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yanone+Kaffeesatz&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -10,6 +9,7 @@
 
 :root{
     --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Yanone Kaffeesatz', sans-serif;
     --primaryColor: #252525;
     --secondaryColor: #6930C3;
     --thirdColor:#64DFDF;

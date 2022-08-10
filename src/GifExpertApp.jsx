@@ -18,7 +18,7 @@ const GifExpertApp = () => {
   return (
 
     <div className={styles.body}>
-        <h1 className={styles._h1}>GifApp!</h1>
+        <h1 className={styles._h1}>Gif App!</h1>
 
         <AddCategory handlerCategory={addOnCategory}/>
 

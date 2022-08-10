@@ -29,7 +29,7 @@
 
 ._input:valid ~ ._span,
 ._input:focus ~ ._span{
-    color:#2196f3;
+    color:var(--thirdColor);
     transform: translateY(-16px);
     font-size: .65em;
 }
