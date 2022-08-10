@@ -1,0 +1,63 @@
+.copyContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.copy_link{
+    color: white;
+    background-color: var(--secondaryColor);
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rrssContainer{
+    display: flex;
+    width: 100%;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+._a{
+    text-decoration: none;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.icon_f,
+.icon_w{
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    
+}
+
+._a:hover{
+    background-color: white;
+    
+}
+
+._a:hover > .icon_f{
+    color: #39569c;
+    
+}
+
+._a:hover > .icon_w{
+   color: #25D366;
+}

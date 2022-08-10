@@ -6,7 +6,7 @@ import './styles.css'
 
 const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['']);
+    const [categories, setCategories] = useState([]);
 
     const addOnCategory =(value)=>{
         if(!categories.includes(value)){
